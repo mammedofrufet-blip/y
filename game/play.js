@@ -22,6 +22,8 @@ start.addEventListener("click", () => {
         if (flTimerCount > 0 && cixarilmis.length === Math.floor(letters.length / 2)) {
             clearInterval(flInterfal)
             flTimer.textContent = "You win🏆"
+            gameArea.classList.remove("baclground-10")
+            gameArea.classList.remove("baclground-5")
         }
         if (flTimerCount <= 10) {
             gameArea.classList.add("background-10")
