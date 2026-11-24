@@ -1,0 +1,30 @@
+.create-box {
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 100;
+}
+
+.post-container {
+    display: flex;
+    align-items: center;
+    flex-direction: center;
+    gap: 10px;
+}
+
+.post-btn {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    background-color: var(--bg-light);
+    color: white;
+    border-radius: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}

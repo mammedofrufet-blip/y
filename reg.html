@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="reg.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form class="reg">
+        <h1 class="regist">Register</h1>
+        <label for="" class="reg-label name-label">
+            <input type="text" placeholder="Enter your name" class="reg-input">
+            <span class="name-error error">Name is not blank</span>
+        </label>
+        <label for="" class="reg-label">
+            <input type="text" placeholder="Enter your surname" class="reg-input">
+            <span class="surname-error error">Surname is not blank</span>
+        </label>
+        <label for="" class="reg-label">
+            <input type="text" placeholder="Enter your Username" class="reg-input">
+            <span class="username-error error">Username is not blank</span>
+            <span class="username-error-2 error">This username is on data</span>
+        </label>
+        <label for="" class="reg-label">
+            <input type="email" placeholder="Enter your Email" class="reg-input">
+            <span class="email-error error">Email is not blank</span>
+            <span class="email-error-2 error">This email is on data</span>
+        </label>
+        <label for="" class="reg-label">
+            <input type="date" class="reg-input">
+            <span class="birthdate-error error">Birthdate is not blank</span>
+        </label>
+        <label for="" class="reg-label">
+            <input type="password" placeholder="Enter your password" class="reg-input">
+            <span class="password-error error">Password must be min 8 symbols </span>
+        </label>
+        <label for="" class="reg-label">
+            <input type="text" placeholder="Enter profile img URL" class="reg-input">
+            <span class="profile-error error">URL is not blank</span>
+        </label>
+        <input type="button" class="reg-btn" value="Sign up">
+    </form>
+    <script src="reg.js"></script>
+</body>
+
+</html>

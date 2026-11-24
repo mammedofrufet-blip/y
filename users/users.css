@@ -1,0 +1,51 @@
+.users-main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px var(--plr);
+}
+
+.all-users{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.user-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 1rem ;
+    border: 1px solid var(--bg-light);
+    padding: 15px;
+}
+
+.user-cover{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.users-head{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+        padding: 10px 15px;
+        height: 40px;
+        gap: 10px;
+
+}
+
+.item-connect{
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    background-color: var(--bg-light);
+    cursor: pointer;
+    color: white;
+    border-radius: 1rem;
+    font-weight: bolder;
+}

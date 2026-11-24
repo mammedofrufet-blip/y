@@ -1,0 +1,244 @@
+.profile {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(66, 44, 147,0.8);
+    backdrop-filter: blur(8px); */
+    background: linear-gradient(var(--bg-light), var(--bg-dark));
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 15px;
+    box-shadow: 0px 0px 20px 1px var(--bg-light);
+    border-radius: 10px;
+    width: 450px;
+}
+
+.show-profile {
+    display: flex;
+}
+
+.profile-user {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 10px;
+    object-fit: cover;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: 4px solid var(--bg-light);
+    background-color: transparent;
+}
+
+
+.profile-user.usr {
+    width: 90vw;
+    height: 90vh;
+    position: relative;
+    top: 160px;
+    border: none;
+    background-color: transparent;
+}
+
+.back.profile-user {
+    background-color: transparent;
+    border: none;
+}
+
+/* .buttn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.show-buttn{
+    width: 500px;
+    height: 500px;
+} */
+
+
+.user-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    padding: 10px;
+    color: white;
+    box-shadow: 0px 0px 20px 2px var(--bg-light);
+    border-radius: 10px;
+
+}
+
+.info:nth-child(1) {
+    color: rgb(255, 203, 72);
+    font-weight: 900;
+}
+
+.info:nth-child(2) {
+    color: var(--bg-lighter);
+}
+
+.logout {
+    color: rgb(255, 110, 110);
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid rgb(255, 130, 130);
+    background-color: transparent;
+    white-space: nowrap;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.all-post {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px var(--plr);
+}
+
+.post-user-info {
+    font-family: sans-serif;
+}
+
+.post-item {
+    width: 100%;
+}
+
+.ll {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid var(--bg-light);
+    border-radius: 10px;
+    width: 800px;
+}
+
+.post-user {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.post-user-img {
+    width: 100%;
+}
+
+.post-input {
+    display: flex;
+    align-items: center;
+    flex-direction: center;
+    border: 1px solid var(--bg-light);
+    outline: none;
+    border-radius: 1.5rem;
+    MARGIN: 10px 0px;
+    padding: 10px 15px;
+    gap: 10px;
+}
+
+.img-input {
+    display: flex;
+    align-items: center;
+    flex-direction: center;
+    border: 1px solid var(--bg-light);
+    outline: none;
+    border-radius: 1.5rem;
+    MARGIN: 10px 0px;
+    padding: 10px 15px;
+    gap: 10px;
+}
+
+.create {
+    color: rgb(110, 255, 110);
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid rgb(130, 255, 130);
+    background-color: transparent;
+    white-space: nowrap;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.x {
+    color: white;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    rotate: 0deg;
+    font-weight: 600;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.x:hover {
+    color: rgb(255, 130, 130);
+    rotate: 360deg;
+}
+
+.online {
+    position: absolute;
+    top: 150px;
+    right: 20px;
+    width: 22px;
+    height: 22px;
+    background-color: rgb(45, 162, 45);
+    border-radius: 50%;
+    border: 2px solid var(--bg-lighter);
+}
+
+.img-box {
+    position: relative;
+    cursor: pointer;
+}
+
+.img-large {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-dark);
+}
+
+.profile-large {
+    width: 80%;
+
+}
+
+.show-large {
+    display: flex;
+}
+
+.game{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color: green;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid green;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-family: sans-serif;
+}

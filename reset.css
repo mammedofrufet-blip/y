@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --bg-dark: #0B081D;
+    --bg-light: #422C93;
+    --bg-red: #FF0033;
+    --bg-white: #FFFFFF;
+    --bg-lighter: #e7e0fe;
+    --plr: 15%;
+}
+
+.all {
+    display: flex;
+    padding: 20px var(--plr);
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+.img-cover {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.img-cover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    border-left: 2px solid orange;
+    border-radius: 50%;
+    animation-name: logo;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+
+.img-cover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--bg-dark);
+    border-radius: 50%;
+}
+
+@keyframes logo {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.input {
+    display: flex;
+    background-color: var(--bg-lighter);
+    padding: 12px 15px;
+    border-radius: 1.5rem;
+    gap: 10px;
+    border: 1px solid var(--bg-light);
+}
+
+.search {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 400px;
+    padding-left: 10px;
+    border-left: 1px solid var(--bg-light);
+    color: var(--bg-light);
+}
+
+.search::placeholder {
+    color: var(--bg-light);
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.item-link {
+    color: var(--bg-light);
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 8px 15px;
+    border: 1px solid var(--bg-light);
+    border-radius: 1.5rem;
+}
+
+.item:nth-child(1)>.item-link,
+.item:nth-child(2)>.item-link,
+.item:nth-child(3)>.item-link {
+    position: relative;
+    top: 8px;
+}
+
+.item:nth-child(4)>.item-link {
+    background-color: var(--bg-light);
+    color: white;
+    cursor: pointer;
+}

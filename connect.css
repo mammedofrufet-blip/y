@@ -1,0 +1,67 @@
+.connection-item {
+    padding: 15px 5px;
+    position: relative;
+}
+
+.bb {
+    box-shadow: 0 0 10px 2px rgba(231, 224, 254, 0.5);
+    /* border: 2px solid var(--bg-light); */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 25px;
+}
+
+.my-connections{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 15px var(--plr) !important;
+    gap: 10px;
+}
+
+.item-name{
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+.connection-cover{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.item-connect-info{
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    gap: 5px;
+    border-radius: 1rem;
+    background-color: var(--bg-lighter);
+}
+
+.tick{
+    color: rgb(20, 180, 20);
+}
+
+.delete{
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background-color: rgba(255, 163, 163, 0.3);
+    border-radius: 50%;
+    padding: 6px;
+    color: red;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.connection-item:hover .delete{
+    opacity: 1;
+}

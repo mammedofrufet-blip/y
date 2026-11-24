@@ -1,0 +1,63 @@
+body {
+    background-color: var(--bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.reg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 23px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 4px rgba(26, 18, 69, 0.3);
+
+}
+
+.reg-btn {
+    border-radius: 1rem;
+    background: linear-gradient(#422C93, #0B081D);
+    color: white;
+    cursor: pointer;
+    padding: 7px;
+    margin-top: 10px;
+    outline: none;
+    border: 2px solid rgba(66, 44, 147, 0.6);
+    grid-column: 2 span;
+}
+
+.regist {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+    font-family: sans-serif;
+    grid-column: 2 span;
+}
+
+.name-label {
+    grid-column: 2 span;
+}
+
+.reg-input {
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    border-bottom: 2px white solid;
+    padding: 10px;
+    width: 100%;
+}
+
+.error {
+    display: none;
+}
+
+.show-error {
+    display: flex;
+    color: red;
+}
